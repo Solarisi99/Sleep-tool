@@ -1,1 +1,185 @@
-<html><head><meta content="text/html; charset=UTF-8" http-equiv="content-type"><style type="text/css">ol{margin:0;padding:0}table td,table th{padding:0}.c0{color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:"Arial";font-style:normal}.c1{padding-top:0pt;padding-bottom:0pt;line-height:1.15;orphans:2;widows:2;text-align:left}.c3{background-color:#ffffff;max-width:468pt;padding:72pt 72pt 72pt 72pt}.c2{height:11pt}.title{padding-top:0pt;color:#000000;font-size:26pt;padding-bottom:3pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;orphans:2;widows:2;text-align:left}.subtitle{padding-top:0pt;color:#666666;font-size:15pt;padding-bottom:16pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;orphans:2;widows:2;text-align:left}li{color:#000000;font-size:11pt;font-family:"Arial"}p{margin:0;color:#000000;font-size:11pt;font-family:"Arial"}h1{padding-top:20pt;color:#000000;font-size:20pt;padding-bottom:6pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;orphans:2;widows:2;text-align:left}h2{padding-top:18pt;color:#000000;font-size:16pt;padding-bottom:6pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;orphans:2;widows:2;text-align:left}h3{padding-top:16pt;color:#434343;font-size:14pt;padding-bottom:4pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;orphans:2;widows:2;text-align:left}h4{padding-top:14pt;color:#666666;font-size:12pt;padding-bottom:4pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;orphans:2;widows:2;text-align:left}h5{padding-top:12pt;color:#666666;font-size:11pt;padding-bottom:4pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;orphans:2;widows:2;text-align:left}h6{padding-top:12pt;color:#666666;font-size:11pt;padding-bottom:4pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;font-style:italic;orphans:2;widows:2;text-align:left}</style></head><body class="c3 doc-content"><p class="c1"><span class="c0">&lt;!DOCTYPE html&gt;</span></p><p class="c1"><span class="c0">&lt;html lang=&quot;en&quot;&gt;</span></p><p class="c1"><span class="c0">&lt;head&gt;</span></p><p class="c1"><span class="c0">&nbsp; &lt;meta charset=&quot;UTF-8&quot; /&gt;</span></p><p class="c1"><span class="c0">&nbsp; &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;</span></p><p class="c1"><span class="c0">&nbsp; &lt;title&gt;Sleep Schedule Optimizer&lt;/title&gt;</span></p><p class="c1"><span class="c0">&nbsp; &lt;style&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; body {</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; font-family: &#39;Segoe UI&#39;, Tahoma, Geneva, Verdana, sans-serif;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; padding: 2rem 1rem;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; max-width: 500px;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; margin: auto;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; background: #fdfdfd;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; color: #333;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; }</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; h2 {</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; text-align: center;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; color: #1a1a1a;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; font-size: 1.8rem;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; margin-bottom: 2rem;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; }</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; .form-row {</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; background: #fff;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; padding: 1rem;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; border-radius: 12px;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; margin-bottom: 1.5rem;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; display: flex;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; flex-direction: column;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; gap: 0.5rem;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; }</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; .form-row label {</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; font-weight: 600;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; font-size: 1rem;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; }</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; .form-row select,</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; .form-row input[type=&quot;number&quot;],</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; .form-row input[type=&quot;range&quot;] {</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; padding: 0.75rem;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; font-size: 1rem;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; border: 1px solid #ccc;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; border-radius: 6px;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; }</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; .subtitle {</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; font-size: 0.85rem;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; color: #666;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; margin-left: auto;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; }</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; .slider-label {</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; font-size: 0.9em;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; color: #333;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; text-align: right;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; margin-top: 0.5rem;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; }</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; .nap-inputs {</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; display: flex;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; gap: 0.5rem;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; align-items: center;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; }</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; .nap-inputs input {</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; width: 60px;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; }</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; button {</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; margin-top: 1rem;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; padding: 1rem;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; width: 100%;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; font-size: 1rem;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; background-color: #2b6cb0;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; color: white;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; border: none;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; border-radius: 8px;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; cursor: pointer;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; transition: background-color 0.2s ease-in-out;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; }</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; button:hover {</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; background-color: #2c5282;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; }</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; #result {</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; margin-top: 2rem;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; background: #f0fdf4;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; padding: 1rem;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; border-left: 5px solid #38a169;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; font-size: 1.1rem;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; border-radius: 8px;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; text-align: center;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; }</span></p><p class="c1"><span class="c0">&nbsp; &lt;/style&gt;</span></p><p class="c1"><span class="c0">&lt;/head&gt;</span></p><p class="c1"><span class="c0">&lt;body&gt;</span></p><p class="c1"><span class="c0">&nbsp; &lt;h2&gt;Sleep Schedule Optimizer&lt;/h2&gt;</span></p><p class="c1 c2"><span class="c0"></span></p><p class="c1"><span class="c0">&nbsp; &lt;div class=&quot;form-row&quot;&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &lt;label for=&quot;desiredWakeup&quot;&gt;Desired Wake-Up Time&lt;/label&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &lt;select id=&quot;desiredWakeup&quot;&gt;&lt;/select&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &lt;div class=&quot;subtitle&quot;&gt;When you would like to wake up&lt;/div&gt;</span></p><p class="c1"><span class="c0">&nbsp; &lt;/div&gt;</span></p><p class="c1 c2"><span class="c0"></span></p><p class="c1"><span class="c0">&nbsp; &lt;div class=&quot;form-row&quot;&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &lt;label for=&quot;actualWakeup&quot;&gt;Actual Wake-Up Time&lt;/label&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &lt;select id=&quot;actualWakeup&quot;&gt;&lt;/select&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &lt;div class=&quot;subtitle&quot;&gt;When you wake up most days&lt;/div&gt;</span></p><p class="c1"><span class="c0">&nbsp; &lt;/div&gt;</span></p><p class="c1 c2"><span class="c0"></span></p><p class="c1"><span class="c0">&nbsp; &lt;div class=&quot;form-row&quot;&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &lt;label for=&quot;actualBedtime&quot;&gt;Actual Bedtime&lt;/label&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &lt;select id=&quot;actualBedtime&quot;&gt;&lt;/select&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &lt;div class=&quot;subtitle&quot;&gt;When you go to sleep most nights&lt;/div&gt;</span></p><p class="c1"><span class="c0">&nbsp; &lt;/div&gt;</span></p><p class="c1 c2"><span class="c0"></span></p><p class="c1"><span class="c0">&nbsp; &lt;div class=&quot;form-row&quot;&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &lt;label for=&quot;nightWakings&quot;&gt;Nighttime Wakings Duration&lt;/label&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &lt;input type=&quot;range&quot; id=&quot;nightWakings&quot; min=&quot;0&quot; max=&quot;3&quot; step=&quot;0.1&quot; value=&quot;0&quot;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;oninput=&quot;document.getElementById(&#39;wakeDuration&#39;).innerText = this.value + &#39; hrs&#39;&quot; /&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &lt;div class=&quot;subtitle&quot;&gt;What&#39;s the total time you spend awake during the night?&lt;/div&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &lt;div class=&quot;slider-label&quot;&gt;Nighttime waking duration: &lt;span id=&quot;wakeDuration&quot;&gt;0 hrs&lt;/span&gt;&lt;/div&gt;</span></p><p class="c1"><span class="c0">&nbsp; &lt;/div&gt;</span></p><p class="c1 c2"><span class="c0"></span></p><p class="c1"><span class="c0">&nbsp; &lt;div class=&quot;form-row&quot;&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &lt;label for=&quot;napHours&quot;&gt;Naps&lt;/label&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &lt;div class=&quot;nap-inputs&quot;&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &lt;input type=&quot;number&quot; id=&quot;napHours&quot; min=&quot;0&quot; max=&quot;10&quot; step=&quot;1&quot; value=&quot;0&quot; /&gt;&lt;span&gt;hrs&lt;/span&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &lt;input type=&quot;number&quot; id=&quot;napMinutes&quot; min=&quot;0&quot; max=&quot;59&quot; step=&quot;1&quot; value=&quot;0&quot; /&gt;&lt;span&gt;min&lt;/span&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &lt;/div&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &lt;div class=&quot;subtitle&quot;&gt;If you take naps, for how long, on average?&lt;/div&gt;</span></p><p class="c1"><span class="c0">&nbsp; &lt;/div&gt;</span></p><p class="c1 c2"><span class="c0"></span></p><p class="c1"><span class="c0">&nbsp; &lt;button onclick=&quot;calculateSchedule()&quot;&gt;Calculate Optimal Sleep Schedule&lt;/button&gt;</span></p><p class="c1 c2"><span class="c0"></span></p><p class="c1"><span class="c0">&nbsp; &lt;div id=&quot;result&quot;&gt;&lt;/div&gt;</span></p><p class="c1 c2"><span class="c0"></span></p><p class="c1"><span class="c0">&nbsp; &lt;script&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; function generateTimeOptions(selectId) {</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; const select = document.getElementById(selectId);</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; for (let hour = 0; hour &lt; 24; hour++) {</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; for (let min = 0; min &lt; 60; min += 15) {</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; const hh = hour.toString().padStart(2, &#39;0&#39;);</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; const mm = min.toString().padStart(2, &#39;0&#39;);</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; const time = `${hh}:${mm}`;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; const option = document.createElement(&quot;option&quot;);</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; option.value = time;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; option.textContent = time;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; select.appendChild(option);</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; }</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; }</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; }</span></p><p class="c1 c2"><span class="c0"></span></p><p class="c1"><span class="c0">&nbsp; &nbsp; [&quot;desiredWakeup&quot;, &quot;actualWakeup&quot;, &quot;actualBedtime&quot;].forEach(generateTimeOptions);</span></p><p class="c1 c2"><span class="c0"></span></p><p class="c1"><span class="c0">&nbsp; &nbsp; function timeToDecimal(timeStr) {</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; const [hours, minutes] = timeStr.split(&quot;:&quot;).map(Number);</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; return hours + minutes / 60;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; }</span></p><p class="c1 c2"><span class="c0"></span></p><p class="c1"><span class="c0">&nbsp; &nbsp; function decimalToTime(decimal) {</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; decimal = (decimal + 24) % 24;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; const hours = Math.floor(decimal);</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; const minutes = Math.round((decimal - hours) * 60);</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; return `${hours.toString().padStart(2, &#39;0&#39;)}:${minutes.toString().padStart(2, &#39;0&#39;)}`;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; }</span></p><p class="c1 c2"><span class="c0"></span></p><p class="c1"><span class="c0">&nbsp; &nbsp; function calculateSchedule() {</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; const desiredWakeup = timeToDecimal(document.getElementById(&quot;desiredWakeup&quot;).value);</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; let actualWakeup = timeToDecimal(document.getElementById(&quot;actualWakeup&quot;).value);</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; const actualBedtime = timeToDecimal(document.getElementById(&quot;actualBedtime&quot;).value);</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; const nightWakings = parseFloat(document.getElementById(&quot;nightWakings&quot;).value);</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; const napHours = parseInt(document.getElementById(&quot;napHours&quot;).value) || 0;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; const napMinutes = parseInt(document.getElementById(&quot;napMinutes&quot;).value) || 0;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; const naps = napHours + napMinutes / 60;</span></p><p class="c1 c2"><span class="c0"></span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; if (actualWakeup &lt; actualBedtime) {</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; actualWakeup += 24; // handle overnight sleep</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; }</span></p><p class="c1 c2"><span class="c0"></span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; const sleepNeed = actualWakeup - actualBedtime - nightWakings - naps;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; const newBedtime = (desiredWakeup - sleepNeed + 24) % 24;</span></p><p class="c1 c2"><span class="c0"></span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; document.getElementById(&quot;result&quot;).innerHTML = `</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; Your estimated sleep need is &lt;strong&gt;${sleepNeed.toFixed(2)} hours&lt;/strong&gt;.&lt;br&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; To meet this need and reduce nighttime waking, aim to go to bed at &lt;strong&gt;${decimalToTime(newBedtime)}&lt;/strong&gt;.&lt;br&gt;&lt;br&gt;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; &nbsp; This schedule helps your body stay aligned with your natural sleep need. It may take 2&ndash;4 days of consistency to feel the full benefits.</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; &nbsp; `;</span></p><p class="c1"><span class="c0">&nbsp; &nbsp; }</span></p><p class="c1"><span class="c0">&nbsp; &lt;/script&gt;</span></p><p class="c1"><span class="c0">&lt;/body&gt;</span></p><p class="c1"><span class="c0">&lt;/html&gt;</span></p><p class="c1 c2"><span class="c0"></span></p><p class="c1 c2"><span class="c0"></span></p></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sleep Schedule Optimizer</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      padding: 2rem 1rem;
+      max-width: 500px;
+      margin: auto;
+      background: #fdfdfd;
+      color: #333;
+    }
+    h2 {
+      text-align: center;
+      color: #1a1a1a;
+      font-size: 1.8rem;
+      margin-bottom: 2rem;
+    }
+    .form-row {
+      background: #fff;
+      padding: 1rem;
+      border-radius: 12px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+      margin-bottom: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+    .form-row label {
+      font-weight: 600;
+      font-size: 1rem;
+    }
+    .form-row select,
+    .form-row input[type="number"],
+    .form-row input[type="range"] {
+      padding: 0.75rem;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+    .subtitle {
+      font-size: 0.85rem;
+      color: #666;
+      margin-left: auto;
+    }
+    .slider-label {
+      font-size: 0.9em;
+      color: #333;
+      text-align: right;
+      margin-top: 0.5rem;
+    }
+    .nap-inputs {
+      display: flex;
+      gap: 0.5rem;
+      align-items: center;
+    }
+    .nap-inputs input {
+      width: 60px;
+    }
+    button {
+      margin-top: 1rem;
+      padding: 1rem;
+      width: 100%;
+      font-size: 1rem;
+      background-color: #2b6cb0;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.2s ease-in-out;
+    }
+    button:hover {
+      background-color: #2c5282;
+    }
+    #result {
+      margin-top: 2rem;
+      background: #f0fdf4;
+      padding: 1rem;
+      border-left: 5px solid #38a169;
+      font-size: 1.1rem;
+      border-radius: 8px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <h2>Sleep Schedule Optimizer</h2>
+
+  <div class="form-row">
+    <label for="desiredWakeup">Desired Wake-Up Time</label>
+    <select id="desiredWakeup"></select>
+    <div class="subtitle">When you would like to wake up</div>
+  </div>
+
+  <div class="form-row">
+    <label for="actualWakeup">Actual Wake-Up Time</label>
+    <select id="actualWakeup"></select>
+    <div class="subtitle">When you wake up most days</div>
+  </div>
+
+  <div class="form-row">
+    <label for="actualBedtime">Actual Bedtime</label>
+    <select id="actualBedtime"></select>
+    <div class="subtitle">When you go to sleep most nights</div>
+  </div>
+
+  <div class="form-row">
+    <label for="nightWakings">Nighttime Wakings Duration</label>
+    <input type="range" id="nightWakings" min="0" max="3" step="0.1" value="0"
+           oninput="document.getElementById('wakeDuration').innerText = this.value + ' hrs'" />
+    <div class="subtitle">What's the total time you spend awake during the night?</div>
+    <div class="slider-label">Nighttime waking duration: <span id="wakeDuration">0 hrs</span></div>
+  </div>
+
+  <div class="form-row">
+    <label for="napHours">Naps</label>
+    <div class="nap-inputs">
+      <input type="number" id="napHours" min="0" max="10" step="1" value="0" /><span>hrs</span>
+      <input type="number" id="napMinutes" min="0" max="59" step="1" value="0" /><span>min</span>
+    </div>
+    <div class="subtitle">If you take naps, for how long, on average?</div>
+  </div>
+
+  <button onclick="calculateSchedule()">Calculate Optimal Sleep Schedule</button>
+
+  <div id="result"></div>
+
+  <script>
+    function generateTimeOptions(selectId) {
+      const select = document.getElementById(selectId);
+      for (let hour = 0; hour < 24; hour++) {
+        for (let min = 0; min < 60; min += 15) {
+          const hh = hour.toString().padStart(2, '0');
+          const mm = min.toString().padStart(2, '0');
+          const time = `${hh}:${mm}`;
+          const option = document.createElement("option");
+          option.value = time;
+          option.textContent = time;
+          select.appendChild(option);
+        }
+      }
+    }
+
+    ["desiredWakeup", "actualWakeup", "actualBedtime"].forEach(generateTimeOptions);
+
+    function timeToDecimal(timeStr) {
+      const [hours, minutes] = timeStr.split(":").map(Number);
+      return hours + minutes / 60;
+    }
+
+    function decimalToTime(decimal) {
+      decimal = (decimal + 24) % 24;
+      const hours = Math.floor(decimal);
+      const minutes = Math.round((decimal - hours) * 60);
+      return `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}`;
+    }
+
+    function calculateSchedule() {
+      const desiredWakeup = timeToDecimal(document.getElementById("desiredWakeup").value);
+      let actualWakeup = timeToDecimal(document.getElementById("actualWakeup").value);
+      const actualBedtime = timeToDecimal(document.getElementById("actualBedtime").value);
+      const nightWakings = parseFloat(document.getElementById("nightWakings").value);
+      const napHours = parseInt(document.getElementById("napHours").value) || 0;
+      const napMinutes = parseInt(document.getElementById("napMinutes").value) || 0;
+      const naps = napHours + napMinutes / 60;
+
+      if (actualWakeup < actualBedtime) {
+        actualWakeup += 24; // handle overnight sleep
+      }
+
+      const sleepNeed = actualWakeup - actualBedtime - nightWakings - naps;
+      const newBedtime = (desiredWakeup - sleepNeed + 24) % 24;
+
+      document.getElementById("result").innerHTML = `
+        Your estimated sleep need is <strong>${sleepNeed.toFixed(2)} hours</strong>.<br>
+        To meet this need and reduce nighttime waking, aim to go to bed at <strong>${decimalToTime(newBedtime)}</strong>.<br><br>
+        This schedule helps your body stay aligned with your natural sleep need. It may take 2–4 days of consistency to feel the full benefits.
+      `;
+    }
+  </script>
+</body>
+</html>
